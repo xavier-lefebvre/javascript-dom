@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url(https://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background: bottom center url("background.jpg") ;
   background-size: cover;
 }
 
@@ -20,7 +20,7 @@ body,html {
 
 .key {
   border: .4rem solid black;
-  border-radius: .5rem;
+  border-radius: 50%;
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
@@ -32,6 +32,11 @@ body,html {
   text-shadow: 0 0 .5rem black;
 }
 
+.boom {
+  display: none;
+}
+
+/*adding a border when this class is added with an eventListener*/
 .playing {
   transform: scale(1.1);
   border-color: #ffc600;

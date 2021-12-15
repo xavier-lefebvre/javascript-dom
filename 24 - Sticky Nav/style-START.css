@@ -78,6 +78,17 @@ li.logo a {
   color: black;
 }
 
+.fix {
+  max-width: 100%;
+}
+
+/* This class is add by javascript when the navbar reach the top of the page after a user scrolling*/
+.sticky { 
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 nav a {
   text-decoration: none;
   padding: 20px;

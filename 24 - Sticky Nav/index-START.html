@@ -55,6 +55,24 @@
 
 <script>
 
+window.onscroll = function() {newStyle()};//'window.onscroll' execute newStyle when the user scrolls.
+
+const navBar = document.querySelector('nav');
+const moveUp = document.querySelector('#main').offsetTop;// moveUp return the position of the navigation bar in relation to the top.
+
+function newStyle() {
+  
+  const logo = document.querySelector('.logo');
+  logo.classList.add('fix'); // class .fix added
+  document.querySelector('.fix').style.maxWidth="100%";// max-width fixed;
+
+  if (window.pageYOffset >= moveUp) { // comparison between the the number of scrolled pixel and the position of the navbar
+    navBar.classList.add('sticky') // if the navbar is at the top of page, 'sticky' class is added.
+  } else {
+    navBar.classList.remove("sticky");
+  }
+}
+
 </script>
 
 </body>
